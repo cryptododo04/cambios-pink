@@ -7,21 +7,32 @@
     background: #c471f5;
   
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right,  rgba(250, 113, 205, 1), rgba(196, 113, 245, 1));
+    background: -webkit-linear-gradient(to right,  rgba(255,107,181,255), rgba(196, 113, 245, 1));
   
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(250, 113, 205, 1), rgba(196, 113, 245, 1))
+    background: linear-gradient(to right, rgba(255,107,181,255), rgba(196, 113, 245, 1))
   }
 
 body{
     height: 100vh;
-    width: 100vw;
+    width: 98.88vw;
+
+    background-image: url('/images/fondo.svg');
+    background-repeat:repeat;
+    background-size: cover; /* Opcional: ajusta el tamaño de la imagen para cubrir todo el fondo */
 }
+
+
 
 .flex-column{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
 }
 
 .pais-container{
@@ -36,4 +47,12 @@ body{
 
 .pais-icono{
     margin-left: 10px;
+    border-radius: 400px;
+}
+
+.card{
+    min-width: 400px !important;
+    margin-top: 20px;
+
+    background-color: rgba(212, 212, 212, 0.97) !important;
 }
