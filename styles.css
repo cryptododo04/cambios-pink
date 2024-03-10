@@ -1,0 +1,39 @@
+.btn {
+    padding: .45rem 1.5rem .35rem;
+  }
+  
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #c471f5;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right,  rgba(250, 113, 205, 1), rgba(196, 113, 245, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(250, 113, 205, 1), rgba(196, 113, 245, 1))
+  }
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pais-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombre-pais-container{
+    width: 100px;
+}
+
+.pais-icono{
+    margin-left: 10px;
+}
