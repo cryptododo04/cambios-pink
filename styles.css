@@ -57,6 +57,12 @@ body{
     background-color: rgba(212, 212, 212, 0.97) !important;
 }
 
+.card-container{
+    background-image: url('./images/fondo.svg');
+    background-repeat:repeat;
+    background-size: cover; /* Opcional: ajusta el tamaño de la imagen para cubrir todo el fondo */
+}
+
 
 @media (max-width: 400px) {
     /* Estilos que se aplicarán cuando el ancho de la pantalla sea 400px o menos */
