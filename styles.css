@@ -51,8 +51,19 @@ body{
 }
 
 .card{
-    min-width: 360px !important;
+    min-width: 400px !important;
     margin-top: 20px;
 
     background-color: rgba(212, 212, 212, 0.97) !important;
+}
+
+
+@media (max-width: 400px) {
+    /* Estilos que se aplicarán cuando el ancho de la pantalla sea 400px o menos */
+
+
+    .card{
+        min-width: 300px !important;
+
+    }
 }
