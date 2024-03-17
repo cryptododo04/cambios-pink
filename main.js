@@ -183,3 +183,64 @@ function calcularComisionChileDeposito(monto) {
 const precioChileUsdt = 1050;
 return monto / precioChileUsdt;
 }
+
+
+//COLOMBIA PAGOS Y DEPOSITOS
+ 
+ // Calcula y muestra los valores de los pagos en el div correspondiente
+ const valoresPagosColombia = {
+    1: calcularComisionColombiaPago(1),
+    5: calcularComisionColombiaPago(5),
+    10: calcularComisionColombiaPago(10),
+    20: calcularComisionColombiaPago(20),
+    25: calcularComisionColombiaPago(25),
+    50: calcularComisionColombiaPago(50),
+    100: calcularComisionColombiaPago(100)
+};
+
+
+// Elemento HTML donde se mostrarán los resultados de los pagos
+const resultadosPagosColombiaDiv = document.getElementById("resultadosPagosColombia");
+
+// Itera sobre los valores de los pagos y los agrega al div
+Object.keys(valoresPagosColombia).forEach(monto => {
+    const valorPago = valoresPagosColombia[monto];
+    const nuevoElemento = document.createElement("div");
+    nuevoElemento.innerHTML = `Si pides que te paguemos <strong>$${monto}</strong>, recibes <strong>${valorPago} COP</strong>`;
+    resultadosPagosColombiaDiv.appendChild(nuevoElemento);
+});
+
+// Función para calcular el valor del pago en ARS
+function calcularComisionColombiaPago(monto) {
+
+    const precioUsdtColombia = 3850;
+
+    return monto * precioUsdtColombia;
+}
+
+
+// Calcula y muestra los valores de los depósitos en el div correspondiente
+const valoresDepositosColombia = {
+3950: calcularComisionColombiaDeposito(3950),
+19750: calcularComisionColombiaDeposito(19750),
+39500: calcularComisionColombiaDeposito(39500),
+79000: calcularComisionColombiaDeposito(79000),
+197500: calcularComisionColombiaDeposito(197500)
+};
+
+// Elemento HTML donde se mostrarán los resultados de los depósitos
+const resultadosDepositosColombiaDiv = document.getElementById("resultadosDepositosColombia");
+
+// Itera sobre los valores de los depósitos y los agrega al div
+Object.keys(valoresDepositosColombia).forEach(monto => {
+const valorDeposito = valoresDepositosColombia[monto];
+const nuevoElemento = document.createElement("div");
+nuevoElemento.innerHTML = `Si depositas <strong>${monto} COP</strong>, recibes <strong>${valorDeposito}$</strong>`;
+resultadosDepositosColombiaDiv.appendChild(nuevoElemento);
+});
+
+// Función para calcular el valor del depósito en USDT
+function calcularComisionColombiaDeposito(monto) {
+const precioColombiaUsdt = 3950;
+return monto / precioColombiaUsdt;
+}
