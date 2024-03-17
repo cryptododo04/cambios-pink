@@ -244,3 +244,162 @@ function calcularComisionColombiaDeposito(monto) {
 const precioColombiaUsdt = 3950;
 return monto / precioColombiaUsdt;
 }
+
+//COSTA RICA PAGOS 
+ 
+
+// Calcula y muestra los valores de los depósitos en el div correspondiente
+const valoresDepositosCostaRica = {
+    540: calcularComisionCostaRicaDeposito(540),
+    2700: calcularComisionCostaRicaDeposito(2700),
+    5400: calcularComisionCostaRicaDeposito(5400),
+    13500: calcularComisionCostaRicaDeposito(13500),
+    27000: calcularComisionCostaRicaDeposito(27000)
+    };
+    
+    // Elemento HTML donde se mostrarán los resultados de los depósitos
+    const resultadosDepositosCostaRicaDiv = document.getElementById("resultadosDepositosCostaRica");
+    
+    // Itera sobre los valores de los depósitos y los agrega al div
+    Object.keys(valoresDepositosCostaRica).forEach(monto => {
+    const valorDeposito = valoresDepositosCostaRica[monto];
+    const nuevoElemento = document.createElement("div");
+    nuevoElemento.innerHTML = `Si depositas <strong>${monto} CRC</strong>, recibes <strong>${valorDeposito}$</strong>`;
+    resultadosDepositosCostaRicaDiv.appendChild(nuevoElemento);
+    });
+    
+    // Función para calcular el valor del depósito en USDT
+    function calcularComisionCostaRicaDeposito(monto) {
+    const precioCrcUsdt = 540;
+    return monto / precioCrcUsdt ;
+    }
+
+
+    //ECUADOR PAGOS Y DEPOSITOS
+ 
+ // Calcula y muestra los valores de los pagos en el div correspondiente
+ const valoresPagosEcuador = {
+    1: calcularComisionEcuadorPago(1),
+    5: calcularComisionEcuadorPago(5),
+    10: calcularComisionEcuadorPago(10),
+    20: calcularComisionEcuadorPago(20),
+    25: calcularComisionEcuadorPago(25),
+    50: calcularComisionEcuadorPago(50),
+    100: calcularComisionEcuadorPago(100)
+};
+
+
+// Elemento HTML donde se mostrarán los resultados de los pagos
+const resultadosPagosEcuadorDiv = document.getElementById("resultadosPagosEcuador");
+
+// Itera sobre los valores de los pagos y los agrega al div
+Object.keys(valoresPagosEcuador).forEach(monto => {
+    const valorPago = valoresPagosEcuador[monto];
+    const nuevoElemento = document.createElement("div");
+    nuevoElemento.innerHTML = `Si pides que te paguemos <strong>$${monto}</strong>, recibes <strong>${valorPago} $</strong>`;
+    resultadosPagosEcuadorDiv.appendChild(nuevoElemento);
+});
+
+// Función para calcular el valor del pago en ARS
+function calcularComisionEcuadorPago(monto) {
+
+    const precioUsdtEcuador = 1;
+
+    return monto * precioUsdtEcuador;
+}
+
+
+// Calcula y muestra los valores de los depósitos en el div correspondiente
+const valoresDepositosEcuador = {
+1: calcularComisionEcuadorDeposito(1),
+5: calcularComisionEcuadorDeposito(5),
+10: calcularComisionEcuadorDeposito(10),
+25: calcularComisionEcuadorDeposito(25),
+50: calcularComisionEcuadorDeposito(50)
+};
+
+// Elemento HTML donde se mostrarán los resultados de los depósitos
+const resultadosDepositosEcuadorDiv = document.getElementById("resultadosDepositosEcuador");
+
+// Itera sobre los valores de los depósitos y los agrega al div
+Object.keys(valoresDepositosEcuador).forEach(monto => {
+const valorDeposito = valoresDepositosEcuador[monto];
+const nuevoElemento = document.createElement("div");
+nuevoElemento.innerHTML = `Si depositas <strong>$${monto} </strong>, recibes <strong>$${valorDeposito}</strong>`;
+resultadosDepositosEcuadorDiv.appendChild(nuevoElemento);
+});
+
+// Función para calcular el valor del depósito en USDT
+function calcularComisionEcuadorDeposito(monto) {
+const precioColombiaUsdt = 1.04;
+return (monto / precioColombiaUsdt).toFixed(2);
+}
+
+
+//EUROS PAGOS Y DEPOSITOS
+ 
+
+// Calcula y muestra los valores de los depósitos en el div correspondiente
+const valoresDepositosEuros = {
+
+    5: calcularComisionEurosDeposito(3.7),
+    10: calcularComisionEurosDeposito(7.9),
+    25: calcularComisionEurosDeposito(20.5),
+    50: calcularComisionEurosDeposito(41.5),
+    100: calcularComisionEurosDeposito(83.5)
+    };
+    
+    // Elemento HTML donde se mostrarán los resultados de los depósitos
+    const resultadosDepositosEurosDiv = document.getElementById("resultadosDepositosEuros");
+    
+    // Itera sobre los valores de los depósitos y los agrega al div
+    Object.keys(valoresDepositosEuros).forEach(monto => {
+    const valorDeposito = valoresDepositosEuros[monto];
+    const nuevoElemento = document.createElement("div");
+    nuevoElemento.innerHTML = `Si depositas <strong>€${monto}</strong>, recibes <strong>€${valorDeposito}$</strong>`;
+    resultadosDepositosEurosDiv.appendChild(nuevoElemento);
+    });
+    
+    // Función para calcular el valor del depósito en USDT
+    function calcularComisionEurosDeposito(monto) {
+    const precioEurosUsdt = 1;
+    return monto / precioEurosUsdt ;
+    }
+
+    
+//MEXICO PAGOS Y DEPOSITOS
+ 
+// Calcula y muestra los valores de los pagos en el div correspondiente
+
+
+
+// Calcula y muestra los valores de los depósitos en el div correspondiente
+const valoresDepositosMexico = [
+    { clave: 22, valor: calcularComisionMexicoDeposito(22) },
+    { clave: 110.2, valor: calcularComisionMexicoDeposito(110.2) },
+    { clave: 220.2, valor: calcularComisionMexicoDeposito(220.2) },
+    { clave: 550.5, valor: calcularComisionMexicoDeposito(550.5) },
+    { clave: 1101.2, valor: calcularComisionMexicoDeposito(1101.2) },
+    { clave: 2202.3, valor: calcularComisionMexicoDeposito(2202.3) }
+];
+
+// Elemento HTML donde se mostrarán los resultados de los depósitos
+const resultadosDepositosMexicoDiv = document.getElementById("resultadosDepositosMexico");
+
+// Itera sobre los valores de los depósitos y los agrega al div
+valoresDepositosMexico.forEach(item => {
+    const clave = item.clave;
+    const valor = item.valor;
+    const nuevoElemento = document.createElement("div");
+    nuevoElemento.innerHTML = `Si depositas <strong>MXN ${clave}</strong>, recibes <strong>$${valor}</strong>`;
+    resultadosDepositosMexicoDiv.appendChild(nuevoElemento);
+});
+
+// Función para calcular el valor del depósito en USDT
+function calcularComisionMexicoDeposito(monto) {
+    const precioMexicoUsdt = 18.5;
+    monto = monto / precioMexicoUsdt;
+
+    monto = monto - monto * 0.16;
+    return monto.toFixed(2);
+}
