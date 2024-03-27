@@ -25,277 +25,235 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
 
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark gradient-custom">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-            <!-- Navbar brand -->
-            <a class="navbar-brand" href="#">
-                <img src="./images/cambios-pink-icono.jpeg" alt="Logo de la empresa" width="105" height="62" class="d-inline-block align-text-top me-2">
-            </a>
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="#">
+              <img src="./images/cambios-pink-icono.jpeg" alt="Logo de la empresa" width="105" height="62" class="d-inline-block align-text-top me-2">
+          </a>
 
-            <!-- Toggle button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars text-light"></i>
-            </button>
+          <!-- Toggle button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars text-light"></i>
+          </button>
 
-            <!-- Collapsible wrapper -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Left links -->
-                <ul class="navbar-nav me-auto d-flex flex-row mt-3 mt-lg-0">
-                    <li class="nav-item text-center mx-2 mx-lg-1">
-                        <a class="nav-link active" aria-current="page" href="index.html">
-                            <div>
-                                <i class="fas fa-home fa-lg mb-1"></i>
-                            </div>
-                            Cuentas de paises
-                        </a>
-                    </li>
-                    <li class="nav-item text-center mx-2 mx-lg-1">
-                        <a class="nav-link" href="pagos.html">
-                            <div>
-                                <i class="far fa-envelope fa-lg mb-1"></i>
-                            </div>
-                            Valores de monedas
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown text-center mx-2 mx-lg-1">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div>
-                                <i class="far fa-envelope fa-lg mb-1"></i>
-                            </div>
-                            Dropdown
-                        </a>
-                        <!-- Dropdown menu -->
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- Left links -->
-
-                <!-- Right links aca iria un ul con li y anchors con iconos -->
-
-
-
-                <!-- Search form -->
-                <form class="d-flex input-group w-auto ms-lg-3 my-3 my-lg-0">
-                    <input type="search" id="search" class="form-control" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-white" type="button" data-mdb-ripple-color="dark">
-                        Search
-                    </button>
-                </form>
-            </div>
-            <!-- Collapsible wrapper -->
-        </div>
-        <!-- Container wrapper -->
-    </nav>
-    <!-- Navbar -->
-
-
-    <div class="card-container">
-
-    <div class="card" style="width: 40%;">
-        <div class="card-body">
-          <h5 class="card-title">Informacion de cuentas</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Cuentas disponibles:</h6>
-
-          <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                   <span class="pais-container"><span class="nombre-pais-container"> <strong>ARGENTINA</strong> </span> <img src="./images/argentina.png" width="30" height="30" class="pais-icono" alt=""></span>
-                  </button>
-              </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-                <div class="accordion-body flex-column">
-                  <u><strong>MERCADO PAGO</strong> </u><span> ALIAS: <code> jazz.fuga.tela.mp </code> </span>
-                </div>
-              </div>
-            </div>
-    
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                      <span class="pais-container"><span class="nombre-pais-container"> <strong>BIZUM</strong> </span> <img src="./images/bizum.png" width="30" height="30" class="pais-icono" alt=""></span>
-                     </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                  <div class="accordion-body flex-column">
-                    <u><strong>Bizum</strong></u><span> Cuenta: <code>670309812</code></span> <code>AVISO:</code>El uso de bizum tiene  0,5 centavos extra de comision ya que las operaciones por bizum son limitadas mensualmente.
-                  </div>
-                </div>
-              </div>
-    
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                    <span class="pais-container"><span class="nombre-pais-container"> <strong>BRASIL</strong> </span> <img src="./images/brazil.png" width="30" height="30" class="pais-icono" alt=""></span>
-                   </button>
-              </h2>
-              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                <div class="accordion-body flex-column">
-                  <u><strong>PIX</strong></u> <code>gustavolopesgeo@gmail.com</code>
-                </div>
-              </div>
-            </div>
-    
-    
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                    <span class="pais-container"><span class="nombre-pais-container"> <strong>CHILE</strong> </span> <img src="./images/chile.png" width="30" height="30" class="pais-icono" alt=""></span>
-                   </button>
-              </h2>
-              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-                <div class="accordion-body flex-column">
-                    <u><strong>BCI</strong></u> <span>Numero de cuenta: <code>777020466904</code> </span>PATRICIO ALEJANDRO GONZÁLEZ BURGOS
-                  </div>
-                </div>
-              </div>
-    
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                      <span class="pais-container"><span class="nombre-pais-container"> <strong>COLOMBIA</strong> </span> <img src="./images/colombia.png" width="30" height="30" class="pais-icono" alt=""></span>
-                     </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
-                  <div class="accordion-body flex-column">
-                      <u><strong>NEQUI</strong></u> <span>Numero de cuenta: <code>3007904025</code> </span>José Martinez
-    
-                      <u><strong>TRANSFERENCIA</strong></u> <span>Nombre <code>Juan Martinez</code> </span> <span>CC: <code>72291797</code> </span> <span>Ahorros Bancolombia <code>773-152552-47</code> </span>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
-                          <span class="pais-container"><span class="nombre-pais-container"> <strong>COSTA RICA</strong> </span> <img src="./images/costa-rica.png" width="30" height="30" class="pais-icono" alt=""></span>
-                         </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
-                      <div class="accordion-body flex-column">
-                          <u><strong>BANCO DE COSTA RICA</strong></u> <span>Cuenta: <code>CR03015202001346215807</code> </span>Alexander Canales Sáenz
-                          <u><strong>SINPE MOVIL</strong></u> <span> NUMERO: <code>8775 2888</code> </span>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
-                              <span class="pais-container"><span class="nombre-pais-container"> <strong>ECUADOR</strong> </span> <img src="./images/ecuador.png" width="30" height="30" class="pais-icono" alt=""></span>
-                             </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
-                          <div class="accordion-body flex-column">
-                              <u><strong>Banco Pichincha</strong></u> <span>Cta. Corriente</span> <span>Numero de cuenta: <code>2100234392</code> </span>Cristian Muñoz <span>C.I.: <code>1724912579</code> </span>
-    
-                              <u><strong>Banco Pacifico</strong></u> <span>Cta. Ahorros</span> <span>Numero de cuenta: <code>1057922209</code> </span>Cristian Muñoz <span>C.I.: <code>1724912579</code> </span>
-                            </div>
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- Left links -->
+              <ul class="navbar-nav me-auto d-flex flex-row mt-3 mt-lg-0">
+                  
+                  
+                  <li class="nav-item text-center mx-2 mx-lg-1">
+                      <a class="nav-link active" aria-current="page" href="index.html">
+                          <div>
+                              <i class="fas fa-home fa-lg mb-1"></i>
                           </div>
-                        </div>
-    
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
-                                  <span class="pais-container"><span class="nombre-pais-container"> <strong>ESPAÑA (EUROS)</strong> </span> <img src="./images/spain.png" width="30" height="30" class="pais-icono" alt=""></span>
-                                 </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
-                              <div class="accordion-body flex-column">
-                                  <u><strong>transferencia Santander</strong></u> <span>Numero de cuenta: <code>ES70 0049 7348 1329 1001 9857</code> </span> William Andres Zamora
-                                </div>
-                              </div>
-                            </div>
-    
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
-                                      <span class="pais-container"><span class="nombre-pais-container"> <strong>MEXICO</strong> </span> <img src="./images/mexico.png" width="30" height="30" class="pais-icono" alt=""></span>
-                                     </button>
-                                </h2>
-                                <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
-                                  <div class="accordion-body flex-column">
-                                    <span><u><strong>Banco BANAMEX</strong></span><strong>Solo transferencia / deposito bancario</strong></u> <span>Deposito en 7eleven</span> <code>5204-1652-8449-9690</code>Isaac López de la Garza
-    
-                                    <span><u><strong>OXXO</strong></span><strong>Solamente por Cajero</strong></u> <code>2242 1757 8928 7887</code>Recuerda que el monto máximo es $5,000 y cada depósito tiene una comisión extra a la cantidad a depositar.
-                                    </div>
-                                  </div>
-                                </div>
-    
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
-                                          <span class="pais-container"><span class="nombre-pais-container"> <strong>PAYPAL</strong> </span> <img src="./images/paypal.png" width="30" height="30" class="pais-icono" alt=""></span>
-                                         </button>
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse">
-                                      <div class="accordion-body flex-column">
-                                        <span><u><strong>(solamente LINK DE DONACION, si el dinero no se envía como donación no llega) </strong></span></u> <code>https://www.paypal.com/donate/?hosted_button_id=YJUMB8KQU3DCY</code>
-        
-                                        </div>
-                                      </div>
-                                    </div>
-    
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
-                                              <span class="pais-container"><span class="nombre-pais-container"> <strong>PERU</strong> </span> <img src="./images/peru.png" width="30" height="30" class="pais-icono" alt=""></span>
-                                             </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse">
-                                          <div class="accordion-body flex-column">
-                                            <span><u><strong>YAPE</strong></span></u> <span>Numero: <code>958433567</code></span>
-            
-                                            <span><u><strong>BANCO BCP</strong></span></u> <span>Numero de cuenta: <code>215-23982047-085</code></span>
-                                            </div>
-                                          </div>
-                                        </div>
-    
-    
-    
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false" aria-controls="panelsStayOpen-collapseEleven">
-                                              <span class="pais-container"><span class="nombre-pais-container"> <strong>REPUBLICA DOMINICANA</strong> </span> <img src="./images/dominican-republic.png" width="30" height="30" class="pais-icono" alt=""></span>
-                                             </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse">
-                                          <div class="accordion-body flex-column">
-                                            <span><u><strong>Banreservas</strong></span></u><strong>Cuenta Ahorro</strong> <span>Numero: <code>9602406056</code> </span>Edisson Emmanuel Feliz Gómez
-            
-                                            </div>
-                                          </div>
-                                        </div>
-    
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header">
-                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwelve">
-                                                  <span class="pais-container"><span class="nombre-pais-container"> <strong>VENEZUELA</strong> </span> <img src="./images/venezuela.png" width="30" height="30" class="pais-icono" alt=""></span>
-                                                 </button>
-                                            </h2>
-                                            <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse">
-                                              <div class="accordion-body flex-column">
-                                                <span><u><strong>Banesco</strong></span></u> <span>Numero: <code>01340239642393060709</code></span>Darwin Sánchez<span>Cedula: <code>16381886</code></span>
-                
-                                                <span><u><strong>Pago MOVIL</strong></span></u> <span>Numero: <code>04141064001</code></span>
-                                                </div>
-                                              </div>
-                                            </div>
-    
-    
-            </div>
+                          inicio
+                      </a>
+                  </li>
+
+
+                  <li class="nav-item text-center mx-2 mx-lg-1">
+                      <a class="nav-link" aria-current="page" href="cuentas.html">
+                          <div>
+                              <i class="fas fa-money-check-dollar"></i>
+                          </div>
+                          Cuentas/paises
+                      </a>
+                  </li>
+
+
+                  <li class="nav-item text-center mx-2 mx-lg-1">
+                      <a class="nav-link" href="pagos.html">
+                          <div>
+                              <i class="far fa-envelope fa-lg mb-1"></i>
+                          </div>
+                          Valores de monedas
+                      </a>
+                  </li>
+                  <li class="nav-item dropdown text-center mx-2 mx-lg-1">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <div>
+                              <i class="far fa-envelope fa-lg mb-1"></i>
+                          </div>
+                          Dropdown
+                      </a>
+                      <!-- Dropdown menu -->
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                  </li>
+              </ul>
+              <!-- Left links -->
+
+              <!-- Right links aca iria un ul con li y anchors con iconos -->
+
+
+
+              <!-- Search form -->
+              <form class="d-flex input-group w-auto ms-lg-3 my-3 my-lg-0">
+                  <input type="search" id="search" class="form-control" placeholder="Search" aria-label="Search" />
+                  <button class="btn btn-outline-white" type="button" data-mdb-ripple-color="dark">
+                      Search
+                  </button>
+              </form>
+          </div>
+          <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+  <div id="principal" class="bienvenida">
+
+    <div id="texto-imagen" class="text-center text-bienvenida">
+
+      <h2>Bienvenidos a cambios pink</h2>
+      <p>La casa de cambio mas profesional para tu desarrollo</p>
+      <button class="btn btn-primary rounded-pill btn-block btn-nav">Comenzar</button>
+
+    </div>
+
+    <img src="./images/Online-Payment.svg" class="img-fluid w-100" alt="">
+
+
+
+
+</div>  
+
+  <div id="quienes-somos" class="container-fluid">
+    <h3>CONOCENOS</h3>
+    <h2>Quienes somos</h2>
+    <p>En <b>Anima-T</b>colaboramos con la construcción de un mundo mejor a partir de empoderar y habilitar a las personas para que alcancen su mejor versión.
+      A través de esta plataforma, acercamos clientes y profesionales, brindando un espacio de conexión para facilitar un proceso hacia el bienestar emocional, el logro de objetivos y el desarrollo personal, en cualquier momento y en cualquier lugar.
+      </p>
+</div>
+
+<div id="ayuda" class="container-fluid d-flex flex-column justify-content-center align-items-center">
+  
+    <h3>COMO FUNCIONA</h3>
+    <h2>¿Buscas ayuda?</h2>
+
+    <div id="container-tarjetas" class="d-flex gap-2">
+      <div class="d-flex flex-column align-items-center text-center">
+        <img src="./images/invoice.png" alt="">
+        <h2>01.</h2>
+        <p>Nos envias la captura de un comprobante de transferencia</p>
+      </div>
+
+      <div class="d-flex flex-column align-items-center  text-center">
+        <img src="./images/bill.png" alt="">
+        <h2>02.</h2>
+        <p>Revisamos el comprobante para verificar que sea verdadero</p>
+      </div>
+
+
+      <div class="d-flex flex-column align-items-center text-center">
+        <img src="./images/send-money.png" alt="">
+        <h2>03.</h2>
+        <p>Recibes el dinero en tu cuenta de preferencia</p>
+      </div>
+  
+    </div>
+
+  </div>  
+
+
+
+</div>
+
+
+<div id="haceClick"class="container-fluid d-flex flex-column justify-content-center align-items-center p-4">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-auto"><p class="d-inline">Si brindas ayuda y te interesa sumate</p></div>
+    <div class="col-auto"><button id="btnClick" class="btn-primary rounded-pill btn-block btn-nav d-inline" style="white-space: nowrap">Hace click aqui</button></div>
+  </div>
+
+</div>
+
+
+
+<div id="preguntas-frecuentes" class="d-flex flex-column align-items-center p-3">
+
+  <h3>CONOCENOS</h3>
+  <h2>Preguntas frecuentes</h2>
+
+  <div id="acordion-y-imagen" class="d-flex justify-content-center align-items-center">
+
+  <div id="acordion"  >
+    <div class="accordion rounded container-fluid" id="accordionExample">
+      <div class="accordion-item rounded">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item rounded">
+        <h2 class="accordion-header rounded" id="headingTwo">
+          <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item rounded">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button rounded collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item rounded">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button  rounded collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Accordion Item #4
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item rounded">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button rounded collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Accordion Item #5
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-
+  <div id="imagen-preguntas">
+    <img src="./images/ilustracion-faqs.svg" class="h-100 img-fluid" style="max-height: 292px;" alt="">
+  </div>
+</div>
+  </div>
 
 
 </body>
